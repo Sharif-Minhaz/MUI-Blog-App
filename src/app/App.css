@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+section {
+	width: 1076px;
+}
+
+.nav-link {
+	color: #718096;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 18px;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #6058e3;
+}
+
+.nav-link.active {
+	color: rgb(85, 85, 255);
+}
