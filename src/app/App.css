@@ -28,3 +28,32 @@ section {
 .nav-link.active {
 	color: rgb(85, 85, 255);
 }
+
+.nav-container {
+	width: 1076px;
+}
+
+.drawer {
+	display: none !important;
+}
+
+@media (max-width: 1114px) {
+	section,
+	.nav-container {
+		width: 100%;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+}
+
+@media (max-width: 850px) {
+	.xl-nav-menu .nav-link {
+		display: none !important;
+	}
+	.drawer {
+		display: flex !important;
+	}
+	.searchBox {
+		display: none !important;
+	}
+}

@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import { FormGroup, FormControlLabel, Switch, Stack, Typography } from "@mui/material";
+import { FormControlLabel, Switch } from "@mui/material";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 	width: 62,
