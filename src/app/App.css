@@ -34,6 +34,10 @@ section {
 	color: rgb(85, 85, 255);
 }
 
+.nav-link.author {
+	font-size: 14px;
+}
+
 .nav-container {
 	width: 1076px;
 }
@@ -48,6 +52,11 @@ section {
 
 .transition:hover {
 	transform: translateY(-3px);
+}
+
+.transition:hover .MuiPaper-root {
+	box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+		0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 .controllers {
@@ -72,12 +81,35 @@ section {
 	background-color: #6058e3;
 }
 
+.card-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 14px !important;
+	object-fit: cover;
+	padding: 5px 5px 13px 15px;
+}
+
 .slider-icons {
 	position: absolute;
 	bottom: 49px;
-    left: 121px;
+	left: 121px;
 	display: flex;
 	gap: 16px;
+}
+
+.divider {
+	position: relative;
+	overflow: hidden;
+}
+
+.divider::before {
+	position: absolute;
+	content: "";
+	height: 91%;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	width: 5px;
+	background-color: #a3bffa;
 }
 
 @media (max-width: 1114px) {
