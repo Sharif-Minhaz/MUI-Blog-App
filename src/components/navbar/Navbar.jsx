@@ -7,7 +7,7 @@ import TemporaryDrawer from "./drawer/Drawer";
 const Navbar = () => {
 	return (
 		<div>
-			<AppBar position="static" sx={{ backgroundColor: "white", boxShadow: 1 }}>
+			<AppBar position="sticky" sx={{ backgroundColor: "white", boxShadow: 1 }}>
 				<Toolbar
 					className="nav-container"
 					variant="inherit"
