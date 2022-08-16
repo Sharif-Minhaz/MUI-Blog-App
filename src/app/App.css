@@ -11,6 +11,7 @@ body {
 
 section {
 	width: 1076px;
+	margin: 60px auto 60px auto;
 }
 
 .nav-link {
@@ -35,6 +36,14 @@ section {
 
 .drawer {
 	display: none !important;
+}
+
+.transition {
+	transition: 0.3s !important;
+}
+
+.transition:hover {
+	transform: translateY(-2px);
 }
 
 @media (max-width: 1114px) {
