@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Slider from "./Slider";
 import AdsImgCard from "../ads-card/AdsImgCard";
+import Rightbar from './../rightbar/Rightbar';
 
 const SliderSection = () => {
 	return (
@@ -52,7 +53,7 @@ const SliderSection = () => {
 					</Grid>
 				</Grid>
 				<Grid item xs={3}>
-					side
+					<Rightbar />
 				</Grid>
 			</Grid>
 		</section>
