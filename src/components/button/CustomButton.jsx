@@ -14,6 +14,7 @@ const styles = {
 	color: "white",
 	fontWeight: "400",
 	transition: "all 0.3s",
+    textAlign:"center",
 	"&:hover": {
 		backgroundColor: "#718096",
 	},
