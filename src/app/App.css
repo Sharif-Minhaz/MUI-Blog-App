@@ -112,6 +112,16 @@ section {
 	background-color: #a3bffa;
 }
 
+.list-dot {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #48bb78;
+	margin-right: 6px;
+	margin-bottom: 2px;
+}
+
 @media (max-width: 1114px) {
 	section,
 	.nav-container {
