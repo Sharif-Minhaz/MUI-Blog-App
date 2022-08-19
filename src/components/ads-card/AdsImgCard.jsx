@@ -27,8 +27,17 @@ const AdsImgCard = ({ img, topic, title, author, date, readTime }) => {
 	return (
 		<Item>
 			<Grid container spacing={1}>
-				<Grid item xs={4} className="divider">
-					<img className="card-img" src={img} alt="item-1" />
+				<Grid item xs={4} className="divider sp-img">
+					<Box
+						sx={{
+							width: "100%",
+							height: "100%",
+							borderRadius: "14px",
+							overflow: "hidden",
+						}}
+					>
+						<img className="card-img" src={img} alt="item-1" />
+					</Box>
 				</Grid>
 				<Grid item xs={8} py={1}>
 					<Button sx={adsButtonStyle} size="small">

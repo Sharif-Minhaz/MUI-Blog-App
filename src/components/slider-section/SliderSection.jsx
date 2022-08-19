@@ -7,10 +7,10 @@ const SliderSection = () => {
 	return (
 		<section>
 			<Grid container spacing={2}>
-				<Grid item xs={9}>
+				<Grid item xs={12} md={9}>
 					<Slider />
 					<Grid container spacing={2} sx={{ mt: "8px" }}>
-						<Grid item xs={6} className="transition">
+						<Grid item xs={12} sm={6} className="transition">
 							<AdsImgCard
 								img="https://flexiblog-agency.netlify.app/static/90a14b9d2337e448de6a033b1c83c93b/6b99c/image.webp"
 								topic="Advertising"
@@ -20,7 +20,7 @@ const SliderSection = () => {
 								readTime="1 min"
 							/>
 						</Grid>
-						<Grid item xs={6} className="transition">
+						<Grid item xs={12} sm={6} className="transition">
 							<AdsImgCard
 								img="https://flexiblog-agency.netlify.app/static/d26d38bc3b4f390d1fb445ded2771158/6b99c/image.webp"
 								topic="Advertising"
@@ -30,7 +30,7 @@ const SliderSection = () => {
 								readTime="6 min"
 							/>
 						</Grid>
-						<Grid item xs={6} className="transition">
+						<Grid item xs={12} sm={6} className="transition">
 							<AdsImgCard
 								img="https://flexiblog-agency.netlify.app/static/9c7ba411a547ca3314d874d779b9f462/6b99c/image.webp"
 								topic="Advertising"
@@ -40,7 +40,7 @@ const SliderSection = () => {
 								readTime="2 min"
 							/>
 						</Grid>
-						<Grid item xs={6} className="transition">
+						<Grid item xs={12} sm={6} className="transition">
 							<AdsImgCard
 								img="https://flexiblog-agency.netlify.app/static/ae6079884611eb3916af3ad9702705a2/6b99c/image.webp"
 								topic="Advertising"
@@ -52,7 +52,7 @@ const SliderSection = () => {
 						</Grid>
 					</Grid>
 				</Grid>
-				<Grid item xs={3}>
+				<Grid item xs={12} md={3}>
 					<Rightbar />
 				</Grid>
 			</Grid>

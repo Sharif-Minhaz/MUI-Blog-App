@@ -86,7 +86,11 @@ section {
 	height: 100%;
 	border-radius: 14px !important;
 	object-fit: cover;
-	padding: 5px 5px 13px 15px;
+	/* padding: 5px 5px 13px 15px; */
+}
+
+.sp-img {
+	padding: 10px 5px 10px 20px !important;
 }
 
 .slider-icons {
@@ -106,9 +110,11 @@ section {
 	position: absolute;
 	content: "";
 	height: 91%;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
 	width: 5px;
+	top: 6px;
+	left: 6px;
 	background-color: #a3bffa;
 }
 
@@ -128,6 +134,16 @@ section {
 		width: 100%;
 		padding-left: 20px !important;
 		padding-right: 20px !important;
+	}
+}
+
+@media (max-width: 900px) {
+	.break-md {
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		text-align: center;
+		align-items: center;
 	}
 }
 

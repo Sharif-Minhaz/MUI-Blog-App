@@ -17,7 +17,7 @@ const paperStyles = {
 const Rightbar = () => {
 	return (
 		<Paper elevation={0} sx={paperStyles}>
-			<Stack>
+			<Stack className="break-md">
 				<Dry sx={{ color: "#9f7aea", fontSize: 50, mb: "20px" }} />
 				<Typography
 					fontSize={26}
@@ -46,7 +46,7 @@ const Rightbar = () => {
 					</Typography>
 				</Stack>
 			</Stack>
-			<Stack>
+			<Stack mt={3}>
 				<CustomButton link="/our-team" text="Learn More" />
 			</Stack>
 		</Paper>
