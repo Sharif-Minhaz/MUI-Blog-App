@@ -1,6 +1,6 @@
-import { Stack, Box, Typography, Avatar } from "@mui/material";
+import { Stack, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { AccessTime } from "@mui/icons-material";
+import CustomAvatar from "../avatar/CustomAvatar";
 
 const sliderStyle = {
 	background: "linear-gradient( 120deg, #2d3748 0%, transparent 180% )",
@@ -19,7 +19,7 @@ const sliderBg = {
 	borderRadius: "14px",
 };
 
-const SliderItem = ({ title, user, avatar, postDate, readTime, bgImage, link }) => {
+const SliderItem = ({ title, user, avatar, profileLink, postDate, readTime, bgImage, link }) => {
 	return (
 		<Stack sx={{ ...sliderBg, backgroundImage: `url(${bgImage})` }}>
 			<Box sx={sliderStyle}>
@@ -33,24 +33,13 @@ const SliderItem = ({ title, user, avatar, postDate, readTime, bgImage, link }) 
 						{title}
 					</Typography>
 				</Link>
-				<Box sx={{ display: "flex", gap: 2 }}>
-					<Box>
-						<Avatar alt={user} src={avatar} sx={{ width: 56, height: 56 }} />
-					</Box>
-					<Stack>
-						<Typography
-							align="left"
-							sx={{ color: "#e2e8f0", mb: "5px" }}
-							fontWeight="bold"
-						>
-							{user}
-						</Typography>
-						<Typography align="left" sx={{ color: "#e2e8f0" }}>
-							{postDate} . <AccessTime sx={{ fontSize: "18px", mb: "-3px" }} />{" "}
-							{readTime}
-						</Typography>
-					</Stack>
-				</Box>
+				<CustomAvatar
+					avatar={avatar}
+					user={user}
+					postDate={postDate}
+					readTime={readTime}
+					profileLink={profileLink}
+				/>
 			</Box>
 		</Stack>
 	);

@@ -77,6 +77,7 @@ const Slider = () => {
 					postDate="April 16, 2022"
 					readTime="1 min"
 					link="/our-team"
+					profileLink="/john"
 				/>
 			) : indicator === 1 ? (
 				<SliderItem
@@ -87,6 +88,7 @@ const Slider = () => {
 					postDate="Jan 05, 2022"
 					readTime="1 min"
 					link="/our-team"
+					profileLink="/jane"
 				/>
 			) : (
 				<SliderItem
@@ -97,6 +99,7 @@ const Slider = () => {
 					postDate="April 10, 2022"
 					readTime="2 min"
 					link="/our-team"
+					profileLink="/doe"
 				/>
 			)}
 		</Item>
