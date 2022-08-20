@@ -26,12 +26,15 @@ const DataCard = ({
 	postDes,
 	theme,
 }) => {
-	console.log(profileLink, link, postLink);
-
 	return (
 		<Item className="transition transition-single">
-			<CardMedia sx={{ p: "7px", height: "100%", objectFit: "cover" }}>
-				<img style={{ borderRadius: "10px" }} width="100%" src={img} alt="tree" />
+			<CardMedia sx={{ p: "7px", height: "auto" }}>
+				<img
+					style={{ borderRadius: "10px", height: "100%", objectFit: "cover" }}
+					width="100%"
+					src={img}
+					alt="tree"
+				/>
 			</CardMedia>
 			<CardContent sx={{ px: "24px", pb: "24px" }}>
 				<TagButton topic={topic} link={link} bg={bg} />
@@ -40,7 +43,7 @@ const DataCard = ({
 						{postTitle}
 					</Link>
 				</Typography>
-				<Typography sx={{ mb: "18px", color: "#718096" }} fontSize="1rem">
+				<Typography sx={{ mb: "18px", color: "#718096" }} fontSize="1rem" className="card-desc">
 					{postDes}
 				</Typography>
 				<CustomAvatar

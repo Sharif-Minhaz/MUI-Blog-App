@@ -5,8 +5,6 @@
 	font-family: "Roboto", Helvetica, sans-serif;
 }
 
-/* dfn */
-
 body {
 	background-color: #f8f8f8;
 }
@@ -178,8 +176,17 @@ section {
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 680px) {
+	.card-desc {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
 	.transition-single {
 		flex-direction: column;
+	}
+	.card-desc {
+		display: block;
 	}
 }
