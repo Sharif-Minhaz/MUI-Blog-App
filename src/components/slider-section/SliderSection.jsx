@@ -9,7 +9,7 @@ const SliderSection = () => {
 			<Grid container spacing={2}>
 				<Grid item xs={12} md={9}>
 					<Slider />
-					<Grid container spacing={2} sx={{ mt: "8px" }}>
+					<Grid container spacing={2} sx={{ mt: "1px" }} rowSpacing={3}>
 						<Grid item xs={12} sm={6} className="transition">
 							<AdsImgCard
 								img="https://flexiblog-agency.netlify.app/static/90a14b9d2337e448de6a033b1c83c93b/6b99c/image.webp"

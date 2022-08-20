@@ -1,10 +1,11 @@
 import { Grid } from "@mui/material";
+import AdsTitleCard from "../ads-card/AdsTitleCard";
 import DataCard from "../data-card/DataCard";
 
 const Advertising = () => {
 	return (
 		<section>
-			<Grid container spacing={2}>
+			<Grid container spacing={2} rowSpacing={3}>
 				<Grid item sm={12} md={4}>
 					<DataCard
 						bg="#e9d8fd"
@@ -42,8 +43,8 @@ const Advertising = () => {
 				<Grid item sm={12} md={4}>
 					<DataCard
 						bg="#e9d8fd"
-						img="https://flexiblog-agency.netlify.app/static/90a14b9d2337e448de6a033b1c83c93b/6b99c/image.webp"
 						topic="Advertising"
+						img="https://flexiblog-agency.netlify.app/static/90a14b9d2337e448de6a033b1c83c93b/6b99c/image.webp"
 						user="Ramsey Bolton"
 						avatar="https://flexiblog-agency.netlify.app/static/18c810c8f231ac22d5ec2cf2819ed68c/a3542/john-doe.webp"
 						link="/link-3"
@@ -54,6 +55,42 @@ const Advertising = () => {
 						postTitle="An introduction to the third-party cookie crackdown"
 						postDes="Primo in altis pelle alumnae Lorem markdownum obvius in seque opus, est bicorni forte; laeva…"
 						theme="dark"
+					/>
+				</Grid>
+				<Grid item sm={12} md={4} sx={{ width: "100%" }}>
+					<AdsTitleCard
+						topic="Advertising"
+						title="Four ways to unlock the true power of TV through programmatic"
+						author="John Doe"
+						profileLink="/john"
+						date="April 16, 2022"
+						readTime="1 min"
+						link="/advertising"
+						postLink="/post-1"
+					/>
+				</Grid>
+				<Grid item sm={12} md={4} sx={{ width: "100%" }}>
+					<AdsTitleCard
+						topic="Advertising"
+						title="The Best Digital Marketing Stats We’ve Seen This Week"
+						author="Edd Doe"
+						profileLink="/edd"
+						date="May 26, 2022"
+						readTime="2 min"
+						link="/advertising"
+						postLink="/post-2"
+					/>
+				</Grid>
+				<Grid item sm={12} md={4} sx={{ width: "100%" }}>
+					<AdsTitleCard
+						topic="Advertising"
+						title="The Consultancy Vs. Agency Debate It’s All About Effectiveness"
+						author="Steve Grant"
+						profileLink="/steve"
+						date="June 10, 2022"
+						readTime="1 min"
+						link="/advertising"
+						postLink="/post-3"
 					/>
 				</Grid>
 			</Grid>
