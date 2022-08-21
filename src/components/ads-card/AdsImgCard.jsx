@@ -10,11 +10,11 @@ const Item = styled(Paper)(({ theme }) => ({
 	borderRadius: "14px",
 }));
 
-const AdsImgCard = ({ img, topic, title, author, date, readTime }) => {
+const AdsImgCard = ({ img, topic, link, title, author, date, readTime, postLink }) => {
 	return (
-		<Item>
-			<Grid container spacing={1}>
-				<Grid item xs={4} className="divider sp-img">
+		<Item className="transition-single">
+			<Grid container spacing={1} className="img-card-body">
+				<Grid item xs={4} className="sp-img divider">
 					<Box
 						sx={{
 							width: "100%",
@@ -26,12 +26,18 @@ const AdsImgCard = ({ img, topic, title, author, date, readTime }) => {
 						<img className="card-img" src={img} alt="item-1" />
 					</Box>
 				</Grid>
-				<Grid item xs={8} py={1}>
-					<TagButton topic={topic} bg="#e9d8fd" link="/advertising" />
-					<Link to="/" className="nav-link">
-						<Typography sx={{ color: "gray" }} mb={1} mt={2}>
-							{title}
-						</Typography>
+				<Grid item xs={8} py={1} className="text-section">
+					{topic && link && <TagButton topic={topic} bg="#e9d8fd" link={link} />}
+					<Link to={postLink} className="nav-link">
+						{topic ? (
+							<Typography sx={{ color: "gray" }} mb={1} mt={2}>
+								{title}
+							</Typography>
+						) : (
+							<Typography sx={{ color: "gray" }} mb={1}>
+								{title}
+							</Typography>
+						)}
 					</Link>
 
 					<Typography sx={{ fontSize: "14px" }}>

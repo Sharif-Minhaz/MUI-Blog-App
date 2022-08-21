@@ -1,19 +1,23 @@
-import { Box } from "@mui/material";
-import Advertising from "../../components/advertising/Advertising";
-import Heading from "../../components/heading/Heading";
+import MidLabel from "../../components/MidLabel";
 import Navbar from "../../components/navbar/Navbar";
-import SliderSection from "../../components/slider-section/SliderSection";
 import Topics from "../../components/topics/Topics";
+import Heading from "../../components/heading/Heading";
+import Advertising from "../../components/advertising/Advertising";
+import CaseStudies from "../../components/case-studies/CaseStudies";
+import SliderSection from "../../components/slider-section/SliderSection";
 
 const Home = () => {
 	return (
-		<Box>
+		<>
 			<Navbar />
 			<Topics />
 			<SliderSection />
 			<Heading text="Advertising" link="/advertising" />
 			<Advertising />
-		</Box>
+			<MidLabel />
+			<Heading text="Case Studies" link="/case-studies" />
+			<CaseStudies />
+		</>
 	);
 };
 

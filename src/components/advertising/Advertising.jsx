@@ -67,6 +67,7 @@ const Advertising = () => {
 						readTime="1 min"
 						link="/advertising"
 						postLink="/post-1"
+						className="sp-no-img"
 					/>
 				</Grid>
 				<Grid item sm={12} md={4} sx={{ width: "100%" }}>
@@ -79,6 +80,7 @@ const Advertising = () => {
 						readTime="2 min"
 						link="/advertising"
 						postLink="/post-2"
+						className="sp-no-img"
 					/>
 				</Grid>
 				<Grid item sm={12} md={4} sx={{ width: "100%" }}>
@@ -91,6 +93,7 @@ const Advertising = () => {
 						readTime="1 min"
 						link="/advertising"
 						postLink="/post-3"
+						className="sp-no-img"
 					/>
 				</Grid>
 			</Grid>

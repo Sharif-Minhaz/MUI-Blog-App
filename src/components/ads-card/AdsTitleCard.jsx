@@ -13,12 +13,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const AdsTitleCard = ({ topic, title, author, profileLink, date, readTime, link, postLink }) => {
 	return (
-		<Item>
+		<Item className="transition-single">
 			<Grid container spacing={1}>
 				<Grid
 					item
 					xs={12}
-					className="divider"
+					className="sp-no-img divider"
 					sx={{ py: "17px !important", pl: "25px !important", pr: "15px" }}
 				>
 					<TagButton topic={topic} bg="#e9d8fd" link={link} />

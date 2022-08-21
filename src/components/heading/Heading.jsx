@@ -6,6 +6,7 @@ const headingStyles = {
 	alignItems: "center",
 	justifyContent: "space-between",
 	pl: 4,
+	position: "relative",
 	"&::before": {
 		content: "''",
 		position: "absolute",
@@ -19,7 +20,7 @@ const headingStyles = {
 
 const Heading = ({ text, link }) => {
 	return (
-		<section style={{ position: "relative" }}>
+		<section>
 			<Stack direction="row" sx={headingStyles} className="heading-divider">
 				<Link to={link} className="heading-nav-link">
 					{text}

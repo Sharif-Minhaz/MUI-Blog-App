@@ -37,13 +37,31 @@ const DataCard = ({
 				/>
 			</CardMedia>
 			<CardContent sx={{ px: "24px", pb: "24px" }}>
-				<TagButton topic={topic} link={link} bg={bg} />
-				<Typography sx={{ mt: "20px", mb: "15px", lineHeight: "28px" }} fontSize="1.25rem">
-					<Link to={postLink} style={{ textDecoration: "none", color: "#000000" }}>
-						{postTitle}
-					</Link>
-				</Typography>
-				<Typography sx={{ mb: "18px", color: "#718096" }} fontSize="1rem" className="card-desc">
+				{bg && topic && link && <TagButton topic={topic} link={link} bg={bg} />}
+				{topic ? (
+					<Typography
+						sx={{ mt: "20px", mb: "15px", lineHeight: "28px" }}
+						fontSize="1.25rem"
+					>
+						<Link to={postLink} style={{ textDecoration: "none", color: "#000000" }}>
+							{postTitle}
+						</Link>
+					</Typography>
+				) : (
+					<Typography
+						sx={{ mt: "-10px", mb: "15px", lineHeight: "28px" }}
+						fontSize="1.25rem"
+					>
+						<Link to={postLink} style={{ textDecoration: "none", color: "#000000" }}>
+							{postTitle}
+						</Link>
+					</Typography>
+				)}
+				<Typography
+					sx={{ mb: "18px", color: "#718096" }}
+					fontSize="1rem"
+					className="card-desc"
+				>
 					{postDes}
 				</Typography>
 				<CustomAvatar

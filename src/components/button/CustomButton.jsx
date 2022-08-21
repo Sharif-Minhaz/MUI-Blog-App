@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 
 const styles = {
-	width: 160,
+	width: 170,
 	pl: "1rem",
 	pr: "1rem",
 	pt: "0.5rem",
@@ -14,7 +14,8 @@ const styles = {
 	color: "white",
 	fontWeight: "400",
 	transition: "all 0.3s",
-    textAlign:"center",
+	textAlign: "center",
+	whiteSpace: "nowrap",
 	"&:hover": {
 		backgroundColor: "#718096",
 	},
