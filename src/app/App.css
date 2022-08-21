@@ -166,6 +166,26 @@ section {
 	top: -50px;
 }
 
+.footer-link {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px 0px 20px 0px;
+}
+.footer-link .heading {
+	font-size: 18px;
+	font-weight: 400;
+}
+.footer-link .nav-link li {
+	font-weight: 400;
+	font-size: 17px;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
 @media (max-width: 1114px) {
 	section,
 	.nav-container {

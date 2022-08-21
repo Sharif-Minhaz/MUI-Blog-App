@@ -8,6 +8,7 @@ import SliderSection from "../../components/slider-section/SliderSection";
 import Innovation from "../../components/innovation/Innovation";
 import Management from "../../components/management/Management";
 import NewsLetter from "../../components/newsletter/NewsLetter";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
 	return (
@@ -25,6 +26,7 @@ const Home = () => {
 			<Heading text="Management" link="/management" />
 			<Management />
 			<NewsLetter />
+			<Footer />
 		</>
 	);
 };
