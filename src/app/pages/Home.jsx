@@ -5,6 +5,9 @@ import Heading from "../../components/heading/Heading";
 import Advertising from "../../components/advertising/Advertising";
 import CaseStudies from "../../components/case-studies/CaseStudies";
 import SliderSection from "../../components/slider-section/SliderSection";
+import Innovation from "../../components/innovation/Innovation";
+import Management from "../../components/management/Management";
+import NewsLetter from "../../components/newsletter/NewsLetter";
 
 const Home = () => {
 	return (
@@ -17,6 +20,11 @@ const Home = () => {
 			<MidLabel />
 			<Heading text="Case Studies" link="/case-studies" />
 			<CaseStudies />
+			<Heading text="Innovation" link="/innovation" />
+			<Innovation />
+			<Heading text="Management" link="/management" />
+			<Management />
+			<NewsLetter />
 		</>
 	);
 };

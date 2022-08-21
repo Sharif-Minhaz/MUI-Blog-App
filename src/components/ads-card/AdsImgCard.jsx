@@ -40,11 +40,13 @@ const AdsImgCard = ({ img, topic, link, title, author, date, readTime, postLink 
 						)}
 					</Link>
 
-					<Typography sx={{ fontSize: "14px" }}>
+					<Typography sx={{ fontSize: "14px", display: "flex", flexDirection: "column" }}>
 						<Link to="/" className="nav-link author">
 							{author}
 						</Link>{" "}
-						{date} <AccessTime sx={{ fontSize: "18px", mb: "-3px" }} /> {readTime}
+						<span>
+							{date} <AccessTime sx={{ fontSize: "18px", mb: "-3px" }} /> {readTime}
+						</span>
 					</Typography>
 				</Grid>
 			</Grid>

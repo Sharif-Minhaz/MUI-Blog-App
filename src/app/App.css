@@ -160,6 +160,12 @@ section {
 	height: 100%;
 }
 
+.paper-plan {
+	position: absolute;
+	left: 10px;
+	top: -50px;
+}
+
 @media (max-width: 1114px) {
 	section,
 	.nav-container {
@@ -220,6 +226,12 @@ section {
 	}
 	.searchBox {
 		display: none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.paper-plan {
+		display: none;
 	}
 }
 
