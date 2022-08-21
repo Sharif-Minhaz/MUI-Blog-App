@@ -1,4 +1,4 @@
-import { Paper, Stack, Typography, Box } from "@mui/material";
+import { Paper, Stack, Typography } from "@mui/material";
 import { Dry } from "@mui/icons-material";
 import CustomButton from "../button/CustomButton";
 
@@ -11,7 +11,6 @@ const paperStyles = {
 	height: "100%",
 	display: "flex",
 	flexDirection: "column",
-	height: "100%",
 };
 
 const Rightbar = () => {
